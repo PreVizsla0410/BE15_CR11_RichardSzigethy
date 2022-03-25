@@ -45,7 +45,7 @@ if (mysqli_query($connect, $sql) === true) {
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Adoption</title>
+        <title>Pet Adoption</title>
         <?php require_once 'components/boot.php'?>    
 
     </head>

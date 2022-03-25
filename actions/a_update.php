@@ -53,7 +53,7 @@ if ($_POST) {
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Update</title>
+    <title>Pet Adoption</title>
         <?php require_once '../../components/boot.php'?> 
     </head>
     <body>

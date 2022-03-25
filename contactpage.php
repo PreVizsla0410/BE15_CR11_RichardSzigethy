@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <?php include_once 'components/boot.php';?>
-    <title>Pet Adoption Agency</title>
+    <title>Pet Adoption</title>
 </head>
 <body>
     <header>

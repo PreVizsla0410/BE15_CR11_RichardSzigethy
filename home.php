@@ -28,11 +28,12 @@ if(isset($_GET['Senior'])){
 
 
 $result = mysqli_query($connect ,$sql);
-$tbody=''; //this variable will hold the body for the table
+$tbody='';
+$thead='';
+//this variable will hold the body for the table
 if(mysqli_num_rows($result)  > 0) {  //wenn die Zahl der Reihen größer als 0 ist   
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){        // https://www.loy-webdesign.de/webdesign/assoziatives-array.htm
         $tbody .= "<tr>
-            <td><img src='products/pictures/".$row['picture']."' class='card-img-top' alt='...'></td> 
               <td>" .$row['name']."</td>
               <td>" .$row['orgin_and_treatment']."</td>
               <td>" .$row['description']."</td>            
@@ -42,10 +43,15 @@ if(mysqli_num_rows($result)  > 0) {  //wenn die Zahl der Reihen größer als 0 i
               <td> 
                 <a href='info.php?animal_id=" .$row['animal_id']."'><button class='btn btn-success' type='button' title='Adopt Pet'><i class='fas fa-hand-holding-heart'></i> Adopt <br> me</button></a>
               </td>           
-        </tr>   
+        </tr>  
+         
+      ";
+      $thead  .= "
+      <tr><td><img src='pictures/".$row['picture']."' class='card-img-top' alt='...'></td> </tr>
       ";
     };
 } else {
+    
     $tbody =  "<tr><td colspan='5'><center>No Data Available </center></td></tr>";
 }
 
@@ -59,7 +65,7 @@ mysqli_close($connect);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome - <?php echo $row1['first_name']; ?></title>
+<title>Pet Adoption</title>
 <link rel="stylesheet" href="style/style.css">
 <?php require_once 'components/boot.php'?>
 </head>
@@ -75,18 +81,17 @@ mysqli_close($connect);
      <div class="container">
             <table class='table table-striped'>
                 <thead class='table-style table-primary'>
-                    <tr>
-                        <th>Picture</th>     
-                        <th>Name</th>                                    
+           
+                <th>Name</th>                                    
                         <th>Orgin and Treatment</th>
                         <th>Description</th>
                         <th>Age</th>
                         <th>Breed</th>
                         <th>Status</th>
                         <th>Action</th>
-                    </tr>
-                </thead>
+</thead>
                 <tbody>
+                <?= $thead;?> 
                     <?= $tbody;?>
                 </tbody>
             </table>
