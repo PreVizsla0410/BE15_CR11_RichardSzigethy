@@ -1,0 +1,54 @@
+
+
+tr {
+  text-align: center;
+  vertical-align: middle;
+}
+
+  td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left;
+
+  }
+
+  td {
+	  font-family: "Segoe UI, sans-serif";
+
+  }
+
+  img {
+	  width: 150px;
+  }
+
+  
+  a:link, a:visited {
+	  text-decoration: none;
+
+  }
+
+ .userImage{
+	width: 100px;
+	height: auto;
+	}
+
+
+
+
+.card-img-top {
+  margin: 0 auto;
+   width: 50%;
+   height: 20rem; 
+   object-fit: contain;
+}
+
+.title{
+  font-family: 'Kaisei Decol', serif;
+  font-weight: bolder;
+}
+
+  
+  .img-thumbnail{
+    width: 70px ;
+    height: 70px ;
+}
