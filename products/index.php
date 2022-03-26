@@ -25,8 +25,8 @@ if(mysqli_num_rows($result)  > 0) {
             <td>" .$row['breed']."</td>
             <td>" .$row['status']."</td>
             <td>
-            <a href='update.php?animal_id=" .$row['animal_id']."'><button class='btn btn-primary btn-sm' title='Edit Pet' type='button'>Edit</i></button></a>
-            <a href='delete.php?animal_id=" .$row['animal_id']."'><button class='btn btn-danger btn-sm' title='Delete Pet' type='button'>Delete</button></a></td>
+            <a href='update.php?animal_id=" .$row['animal_id']."'><button class='btn btn-primary btn-sm m-2' title='Edit Pet' type='button'>Edit</i></button></a>
+            <a href='delete.php?animal_id=" .$row['animal_id']."'><button class='btn btn-danger btn-sm m-2' title='Delete Pet' type='button'>Delete</button></a></td>
             </tr>";
     };
 } else {

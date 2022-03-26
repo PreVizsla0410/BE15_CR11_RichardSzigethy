@@ -22,7 +22,7 @@ $sql2 = "UPDATE animals SET status = 'unavailable' WHERE animal_id = {$animal_id
 if (mysqli_query($connect, $sql) === true) {     
     $class = "alert alert-success";
     $message = "The record was successfully updated";
-    // header("refresh:1;url=update.php?id={$id}");
+
 
     if (mysqli_query($connect, $sql2) === true) {     
         $class = "alert alert-success";
@@ -31,13 +31,11 @@ if (mysqli_query($connect, $sql) === true) {
     } else {
         $class = "alert alert-danger";
         $message = "Error while adopting the pet : <br>" . $connect->error;
-        // header("refresh:1;url=update.php?id={$id}");
     }
 
 } else {
     $class = "alert alert-danger";
     $message = "Error while updating record : <br>" . $connect->error;
-    // header("refresh:1;url=update.php?id={$id}");
 }
 ?>
 
