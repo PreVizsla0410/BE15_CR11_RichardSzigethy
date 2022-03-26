@@ -33,7 +33,7 @@ if ($_GET['animal_id']) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pet Adoption Agency | Admin</title>
+        <title>Pet Adoption | Admin</title>
         <link rel="stylesheet" href="../style/style.css">
         <?php require_once '../components/boot.php'?>
         <style type= "text/css">
@@ -66,8 +66,8 @@ if ($_GET['animal_id']) {
             <form action ="actions/a_delete.php" method="post">
                 <input type="hidden" name="animal_id" value="<?php echo $id ?>" />
                 <input type="hidden" name="picture" value="<?php echo $picture ?>" />
-                <button class="btn btn-danger" type="submit">Yes, delete it!</button>
-                <a href="index.php"><button class="btn btn-warning" type="button">No, go back!</button></a>
+                <button class="btn btn-danger" type="submit">Yes</button>
+                <a href="index.php"><button class="btn btn-warning" type="button">No</button></a>
             </form>
         </fieldset>
         </div>

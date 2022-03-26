@@ -37,7 +37,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <?php require_once '../components/boot.php'?>
         <link rel="stylesheet" href="style/style.css">
-        <title>Pet Adoption Agency | Admin</title>
+        <title>Pet Adoption Admin</title>
         <style>
             fieldset {
                 margin: auto;
@@ -62,8 +62,8 @@
                         <td><input class='form-control' type="text" name="name"  placeholder="Animal Name" ></td>
                     </tr>    
                     <tr>
-                        <th>Address</th>
-                        <td><input class='form-control' type="text" name= "petaddress" placeholder="Address" ></td>
+                        <th>Orgin and Treatment</th>
+                        <td><input class='form-control' type="text" name= "orgin" placeholder="Orgin and Treatments(like vaccacinations, trainings etc...)" ></td>
                     </tr>
                     <tr>
                         <th>Description</th>

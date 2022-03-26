@@ -70,7 +70,7 @@ if ($_GET['animal_id']) {
                         <td><input class='form-control' type="text" name="name"  placeholder="Animal Name" value="<?php echo $name ?>" ></td>
                     </tr>    
                     <tr>
-                        <th>Address</th>
+                        <th>Orgin and Treatment</th>
                         <td><input class='form-control' type="text" name= "orgin_and_treatment" placeholder="Orgin and Treatment(like trainings or vaccaciantion etc.)" value ="<?php echo $orgin ?>" ></td>
                     </tr>
                     <tr>

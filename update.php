@@ -18,7 +18,7 @@ if(isset($_SESSION["adm"])){
     $backBtn = "dashBoard.php";    
 }
 
-//fetch and populate form
+
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $sql = "SELECT * FROM user WHERE user_id = {$id}";
@@ -34,7 +34,7 @@ if (isset($_GET['id'])) {
     }   
 }
 
-//update
+
 $class = 'd-none';
 if (isset($_POST["submit"])) {
     $f_name = $_POST['first_name'];
